@@ -32,7 +32,7 @@
   \end{frame}
 }
 
-\title[POD] % (optional, use only with long paper titles)
+\title[Intro to R] % (optional, use only with long paper titles)
 {An introduction to R for oceanographic analysis}
 
 \subtitle
@@ -45,8 +45,8 @@
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 
-% \institute[abbrev] % (optional, but mostly needed)
-% {Institute}
+\institute[] % (optional, but mostly needed)
+{Postdoc Ocean Discussion}
 
 \date% (optional)
 {2013-02-14}
@@ -99,10 +99,10 @@
 
   \begin{block}{}
     \begin{itemize}
-    \item Free (as in beer)!
-    \item Open source
+    \item Free and open source (as in beer and speech)
     \item Powerful (especially with statistics)
-    \item Good package management (and help!)
+    \item Popular
+    \item Good package management (and help!) system
     \item ...
     \end{itemize}
   \end{block}
@@ -284,8 +284,9 @@ dev.off()
     \begin{itemize}
     \item downside: not as interactive as Matlab
     \end{itemize}
-  \item indexing with \verb|[...]| (e.g. \verb|x[x>5][20]|; take the
-    20th value from the values of \verb|x| which are greater than 5)
+  \item successive indexing with \verb|[...]| (e.g. \verb|x[x>5][20]|;
+    take the 20th value from the values of \verb|x| which are greater
+    than 5)
   \item good help/package system
   \item named arguments in functions
   \item command line interface (\verb|$ R < script.R|)
