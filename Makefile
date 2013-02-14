@@ -14,4 +14,4 @@ clean:
 
 clean-all:
 	make clean
-	-rm *.pdf
+	-rm ${pdfs}

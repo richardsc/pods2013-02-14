@@ -116,10 +116,13 @@
   R generally uses \verb|<-| instead of \verb|=| to {\it assign}
   variables (\verb|=| is reserved for function arguments and comparisons).
 <<>>=
-x <- 5
-y <- 'hello world'
-z <- c(1:2, 5, 'something')
-x == 5
+x <- 5 # numeric
+print(x)
+y <- 'hello world' # character
+z <- c(1:2, 5, 'something') ## vectors and coercion 
+print(z)
+class(z)
+x == 5 # logical
 @   
   
 \end{frame}
@@ -133,6 +136,7 @@ x == 5
   \item This makes working with specific classes (i.e. data types)
     quick and easy to code.
   \end{itemize}
+  \pause
 <<>>=
 class(x)
 data(co2)
@@ -193,12 +197,13 @@ summary(m)
 \section{Packages and oce}
 
 
-\begin{frame}[fragile]{Packages: oce}
+\begin{frame}[fragile]{Packages: oce (\url{http://dankelley.github.com/oce/})}
   
   Can install packages from CRAN with
   \verb|install.packages('oce')|. Then load the library, and use it!
   \pause
   
+  \vspace{1em}
 <<>>=
 library(oce)
 d <- read.oce('2008-06-25_st002.cnv')
@@ -285,7 +290,18 @@ dev.off()
   \item named arguments in functions
   \item command line interface (\verb|$ R < script.R|)
   \item POSIX times (instead of \verb|datenum| and \verb|datetick()|)
+  \item Sweave: write R and \LaTeX in the same document (like this one!)
   \end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Book: Oceanographic Analysis in R}{by Dan Kelley,
+    Dalhousie University; in editing stage with Springer}
+  
+  \includegraphics<1>[height=\vsize,page=1]{oar-toc}
+  \includegraphics<2>[height=\vsize,page=2]{oar-toc}
+  \includegraphics<3>[height=\vsize,page=3]{oar-toc}
+  \includegraphics<4>[height=\vsize,page=4]{oar-toc}
   
 \end{frame}
 
