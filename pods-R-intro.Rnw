@@ -175,8 +175,7 @@ pdf("co2.pdf", height=5, pointsize=14)
 <<>>=
 plot(co2, ylab=expression(CO[2]~group('[', ppm, ']')))
 m <- lm(co2 ~ time(co2))
-##abline(m, col=2, lwd=3); grid()
-lines(predict(m), col=2, lwd=3); grid()
+abline(m, col=2, lwd=3); grid()
 @ 
 \vspace{-4em}
 \begin{center}
