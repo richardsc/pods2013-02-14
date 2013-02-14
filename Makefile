@@ -1,6 +1,6 @@
-pdfs=pods-R-intro.pdf
+pdfs=pods-R-intro
 
-all: ${pdfs}
+all: ${pdfs}.pdf
 
 %.tex: %.Rnw
 	R CMD sweave $<
@@ -14,4 +14,4 @@ clean:
 
 clean-all:
 	make clean
-	-rm ${pdfs}
+	-rm ${pdfs}.pdf ${pdfs}.tex
