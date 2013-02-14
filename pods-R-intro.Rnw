@@ -99,10 +99,11 @@
 
   \begin{block}{}
     \begin{itemize}
-    \item Free and open source (as in beer and speech)
-    \item Powerful (especially with statistics)
-    \item Popular
-    \item Good package management (and help!) system
+    \item free and open source (as in beer and speech)
+    \item powerful (especially with statistics)
+    \item popular
+    \item was specifically developed for data analysis
+    \item good package management (and help!) system
     \item ...
     \end{itemize}
   \end{block}
@@ -174,7 +175,8 @@ pdf("co2.pdf", height=5, pointsize=14)
 <<>>=
 plot(co2, ylab=expression(CO[2]~group('[', ppm, ']')))
 m <- lm(co2 ~ time(co2))
-abline(m, col=2, lwd=3); grid()
+##abline(m, col=2, lwd=3); grid()
+lines(predict(m), col=2, lwd=3); grid()
 @ 
 \vspace{-4em}
 \begin{center}
